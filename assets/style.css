@@ -16,7 +16,14 @@
 }
 
 main {
-    height: 80vh;
+    margin: 0;
+    padding: 80;
+    padding-right: 0;
+}
+
+.image {
+   padding-right: 0;
+   padding-left: 0;
 }
 
 .footer-link {
