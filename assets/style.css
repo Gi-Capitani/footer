@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400&family=Foldit:wght@200;300;400&family=Inter:wght@100;200;300;400;500;600&family=Luckiest+Guy&family=Pangolin&family=Roboto:wght@400;700&family=Titan+One&display=swap');
 
+@keyframes entering {
+   from {
+   opacity: 0;
+   transform: translateY(-200px);
+   }
+   to {
+   opacity:1;
+   transform: translateY(0);
+   }
+   }
+
+   main * {
+      animation: entering 0.7s ease-in-out;
+    }
+
 :root {
     --color-neutral-0: #0e0c0c;
     --color-neutral-10: #171717;
@@ -16,14 +31,15 @@
 }
 
 main {
-    margin: 0;
-    padding: 80;
-    padding-right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
 }
 
-.image {
-   padding-right: 0;
-   padding-left: 0;
+.image { 
+   
+    padding: 3rem;
+    background-color: #171717;
 }
 
 .footer-link {
