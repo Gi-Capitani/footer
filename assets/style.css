@@ -33,11 +33,10 @@
 main {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 .image { 
-   
     padding: 3rem;
     background-color: #171717;
 }
@@ -122,6 +121,7 @@ footer {
 
  #footer_subscribe p {
     color: var(--color-neutral-30);
+    justify-content: center;
  }
 
  #input_group {
@@ -167,11 +167,17 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
+    .image {
+      display: none;
+    }
  }
 
  @media screen and (max-width: 426px) {
     #footer_content {
         grid-template-columns: repeat(1, 1fr);
         padding: 2rem 2rem;
+    }
+    .image {
+      display: none;
     }
  }
